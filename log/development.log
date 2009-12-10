@@ -846,3 +846,122 @@ Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-10 16:51:13) 
 Rendering template within layouts/participantes
 Rendering participantes/index
 Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-12-10 17:33:02) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/participantes_controller.rb:1
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-10 17:51:40) [GET]
+  [4;36;1mParticipante Load (0.7ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 167ms (View: 157, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#new (for 127.0.0.1 at 2009-12-10 17:51:45) [GET]
+Rendering template within layouts/participantes
+Rendering participantes/new
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/participantes/new]
+
+
+Processing ParticipantesController#create (for 127.0.0.1 at 2009-12-10 17:51:56) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"meN4jMlzTuR3LYJkTu9fJdLOXbdLqt5P00fKHJ/Cxo0=", "participante"=>{"nome"=>"rodrigo", "email"=>"ro@t.com"}}
+  [4;35;1mParticipante Create (0.5ms)[0m   [0mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-10 19:51:56', 'rodrigo', '2009-12-10 19:51:56', NULL, 'ro@t.com')[0m
+Redirected to http://localhost:3000/participantes/3
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/participantes]
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-10 17:51:56) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 3) [0m
+Rendering template within layouts/participantes
+Rendering participantes/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/participantes/3]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-10 17:51:59) [GET]
+  [4;35;1mParticipante Load (0.7ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-10 17:52:19) [GET]
+  [4;36;1mSorteio Load (0.5ms)[0m   [0;1mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/sorteios
+Rendering sorteios/index
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/sorteios]
+
+
+Processing SorteiosController#new (for 127.0.0.1 at 2009-12-10 17:52:22) [GET]
+Rendering template within layouts/sorteios
+Rendering sorteios/new
+Completed in 95ms (View: 90, DB: 0) | 200 OK [http://localhost/sorteios/new]
+
+
+Processing SorteiosController#create (for 127.0.0.1 at 2009-12-10 17:52:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"meN4jMlzTuR3LYJkTu9fJdLOXbdLqt5P00fKHJ/Cxo0="}
+  [4;35;1mSorteio Create (0.6ms)[0m   [0mINSERT INTO "sorteios" ("created_at", "updated_at") VALUES('2009-12-10 19:52:24', '2009-12-10 19:52:24')[0m
+Redirected to http://localhost:3000/sorteios/2
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/sorteios]
+
+
+Processing SorteiosController#show (for 127.0.0.1 at 2009-12-10 17:52:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSorteio Load (0.2ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 2) [0m
+Rendering template within layouts/sorteios
+Rendering sorteios/show
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/sorteios/2]
+
+
+Processing SorteiosController#edit (for 127.0.0.1 at 2009-12-10 17:52:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 2) [0m
+Rendering template within layouts/sorteios
+Rendering sorteios/edit
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/sorteios/2/edit]
+
+
+Processing SorteiosController#show (for 127.0.0.1 at 2009-12-10 17:52:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSorteio Load (0.2ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 2) [0m
+Rendering template within layouts/sorteios
+Rendering sorteios/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/sorteios/2]
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-10 17:52:31) [GET]
+  [4;35;1mSorteio Load (0.5ms)[0m   [0mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/sorteios
+Rendering sorteios/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/sorteios]
+
+
+Processing SorteiosController#show (for 127.0.0.1 at 2009-12-10 17:52:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSorteio Load (0.2ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 1) [0m
+Rendering template within layouts/sorteios
+Rendering sorteios/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/sorteios/1]
+
+
+Processing SorteiosController#destroy (for 127.0.0.1 at 2009-12-10 17:54:32) [DELETE]
+  Parameters: {"authenticity_token"=>"meN4jMlzTuR3LYJkTu9fJdLOXbdLqt5P00fKHJ/Cxo0=", "id"=>"2"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 2) [0m
+  [4;36;1mSorteio Destroy (0.4ms)[0m   [0;1mDELETE FROM "sorteios" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/sorteios
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/sorteios/2]
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-10 17:54:32) [GET]
+  [4;35;1mSorteio Load (0.6ms)[0m   [0mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/sorteios
+Rendering sorteios/index
+Completed in 97ms (View: 6, DB: 1) | 200 OK [http://localhost/sorteios]
