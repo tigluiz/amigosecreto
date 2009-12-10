@@ -1,0 +1,24 @@
+<h1>Listing participantes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Sorteio</th>
+  </tr>
+
+<% for participante in @participantes %>
+  <tr>
+    <td><%=h participante.nome %></td>
+    <td><%=h participante.email %></td>
+    <td><%=h participante.sorteio %></td>
+    <td><%= link_to 'Show', participante %></td>
+    <td><%= link_to 'Edit', edit_participante_path(participante) %></td>
+    <td><%= link_to 'Destroy', participante, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New participante', new_participante_path %>

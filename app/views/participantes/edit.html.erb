@@ -1,0 +1,24 @@
+<h1>Editing participante</h1>
+
+<% form_for(@participante) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :sorteio %><br />
+    <%= f.text_field :sorteio %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @participante %> |
+<%= link_to 'Back', participantes_path %>

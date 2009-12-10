@@ -1,0 +1,12 @@
+<h1>Editing sorteio</h1>
+
+<% form_for(@sorteio) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @sorteio %> |
+<%= link_to 'Back', sorteios_path %>

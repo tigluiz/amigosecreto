@@ -1,0 +1,18 @@
+<p>
+  <b>Nome:</b>
+  <%=h @participante.nome %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @participante.email %>
+</p>
+
+<p>
+  <b>Sorteio:</b>
+  <%=h @participante.sorteio %>
+</p>
+
+
+<%= link_to 'Edit', edit_participante_path(@participante) %> |
+<%= link_to 'Back', participantes_path %>
