@@ -1106,3 +1106,23 @@ Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:41:46) 
 Rendering template within layouts/participantes
 Rendering participantes/index
 Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-16 14:59:16) [GET]
+  [4;36;1mSorteio Load (22.7ms)[0m   [0;1mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/sorteios
+Rendering sorteios/index
+Completed in 60ms (View: 31, DB: 23) | 200 OK [http://localhost/sorteios]
+
+
+Processing SorteiosController#new (for 127.0.0.1 at 2009-12-16 14:59:22) [GET]
+Rendering template within layouts/sorteios
+Rendering sorteios/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/sorteios/new]
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-16 15:01:12) [GET]
+  [4;35;1mSorteio Load (0.6ms)[0m   [0mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/sorteios
+Rendering sorteios/index
+Completed in 46ms (View: 41, DB: 1) | 200 OK [http://localhost/sorteios]
