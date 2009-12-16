@@ -1023,3 +1023,86 @@ Completed in 97ms (View: 6, DB: 1) | 200 OK [http://localhost/sorteios]
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091209191757')[0m
   [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091209191549')[0m
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:33:29) [GET]
+  [4;36;1mParticipante Load (7.3ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 157ms (View: 121, DB: 7) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:33:58) [GET]
+  [4;35;1mParticipante Load (0.7ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 92ms (View: 86, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:34:02) [GET]
+  [4;36;1mParticipante Load (0.7ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:34:05) [GET]
+  [4;35;1mParticipante Load (0.8ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:34:19) [GET]
+  [4;36;1mParticipante Load (0.7ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:35:47) [GET]
+  [4;35;1mParticipante Load (0.7ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#new (for 127.0.0.1 at 2009-12-16 14:35:59) [GET]
+Rendering template within layouts/participantes
+Rendering participantes/new
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/participantes/new]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:36:29) [GET]
+  [4;36;1mParticipante Load (0.8ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 105ms (View: 19, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:38:42) [GET]
+  [4;35;1mParticipante Load (0.7ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:40:25) [GET]
+  [4;36;1mParticipante Load (0.7ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:40:26) [GET]
+  [4;35;1mParticipante Load (0.7ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-16 14:41:46) [GET]
+  [4;36;1mParticipante Load (0.7ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/participantes]
