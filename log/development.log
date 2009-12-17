@@ -1126,3 +1126,91 @@ Processing SorteiosController#index (for 127.0.0.1 at 2009-12-16 15:01:12) [GET]
 Rendering template within layouts/sorteios
 Rendering sorteios/index
 Completed in 46ms (View: 41, DB: 1) | 200 OK [http://localhost/sorteios]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-17 14:35:55) [GET]
+  [4;36;1mParticipante Load (1.3ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 266ms (View: 262, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#edit (for 127.0.0.1 at 2009-12-17 14:36:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mParticipante Load (0.3ms)[0m   [0mSELECT * FROM "participantes" WHERE ("participantes"."id" = 1) [0m
+Rendering template within layouts/participantes
+Rendering participantes/edit
+Completed in 28ms (View: 24, DB: 0) | 200 OK [http://localhost/participantes/1/edit]
+
+
+Processing ParticipantesController#update (for 127.0.0.1 at 2009-12-17 14:36:09) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"meN4jMlzTuR3LYJkTu9fJdLOXbdLqt5P00fKHJ/Cxo0=", "id"=>"1", "participante"=>{"nome"=>"Tiago", "email"=>"tig.luiz.almeida@gmail.com"}}
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 1) [0m
+  [4;35;1mParticipante Update (0.5ms)[0m   [0mUPDATE "participantes" SET "updated_at" = '2009-12-17 16:36:09', "nome" = 'Tiago' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/participantes/1
+Completed in 27ms (DB: 1) | 302 Found [http://localhost/participantes/1]
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-17 14:36:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 1) [0m
+Rendering template within layouts/participantes
+Rendering participantes/show
+Completed in 35ms (View: 30, DB: 0) | 200 OK [http://localhost/participantes/1]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-17 14:36:12) [GET]
+  [4;35;1mParticipante Load (0.7ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-17 14:36:56) [GET]
+
+SyntaxError (/Users/tiagoalmeida/Documents/rails-app/amigosecreto/app/controllers/participantes_controller.rb:2: syntax error, unexpected $end):
+  
+
+Rendered rescues/_trace (127.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-17 14:46:28) [GET]
+  [4;36;1mParticipante Load (0.7ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 35ms (View: 31, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#new (for 127.0.0.1 at 2009-12-17 14:46:40) [GET]
+Rendering template within layouts/participantes
+Rendering participantes/new
+Completed in 49ms (View: 45, DB: 0) | 200 OK [http://localhost/participantes/new]
+
+
+Processing ParticipantesController#create (for 127.0.0.1 at 2009-12-17 14:47:00) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"meN4jMlzTuR3LYJkTu9fJdLOXbdLqt5P00fKHJ/Cxo0=", "participante"=>{"nome"=>"Cardoso da silva Pinto", "email"=>"carto@gmail.com"}}
+  [4;35;1mParticipante Create (47.1ms)[0m   [0mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-17 16:47:00', 'Cardoso da silva Pinto', '2009-12-17 16:47:00', NULL, 'carto@gmail.com')[0m
+Redirected to http://localhost:3000/participantes/4
+Completed in 75ms (DB: 0) | 302 Found [http://localhost/participantes]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-17 14:47:00) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 4) [0m
+Rendering template within layouts/participantes
+Rendering participantes/show
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from _run_erb_app47views47layouts47participantes46html46erb at /Users/tiagoalmeida/Documents/rails-app/amigosecreto/app/views/layouts/participantes.html.erb:12)
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/participantes/4]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-17 14:47:03) [GET]
+  [4;35;1mParticipante Load (0.7ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/participantes
+Rendering participantes/index
+Completed in 100ms (View: 96, DB: 1) | 200 OK [http://localhost/participantes]

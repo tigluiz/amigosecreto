@@ -1,0 +1,17 @@
+en:
+  flash:
+    addresses:
+      create:
+        notice: "You created a new address close to <b>{{reference}}</b>."
+      update:
+        success: "Nice! {{resource_name}} was updated with success!"
+        failure: "Oh no! We could not update your address!"
+    admin:
+      actions:
+        create:
+          success: "Admin notice message."
+          failure: "Admin error message."
+      addresses:
+        create:
+          success: "Admin, you created a new address close to <b>{{reference}}</b>."
+
