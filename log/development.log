@@ -1214,3 +1214,79 @@ Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-17 14:47:03) 
 Rendering template within layouts/participantes
 Rendering participantes/index
 Completed in 100ms (View: 96, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-18 14:24:39) [GET]
+  [4;36;1mParticipante Load (0.9ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+Completed in 267ms (View: 263, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#edit (for 127.0.0.1 at 2009-12-18 14:24:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mParticipante Load (0.2ms)[0m   [0mSELECT * FROM "participantes" WHERE ("participantes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering participantes/edit
+Completed in 37ms (View: 32, DB: 0) | 200 OK [http://localhost/participantes/2/edit]
+
+
+Processing ParticipantesController#update (for 127.0.0.1 at 2009-12-18 14:25:02) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "id"=>"2", "participante"=>{"nome"=>"ricardo", "email"=>"ricardo.gmail.com"}}
+  [4;36;1mParticipante Load (0.2ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 2) [0m
+  [4;35;1mParticipante Update (0.5ms)[0m   [0mUPDATE "participantes" SET "updated_at" = '2009-12-18 16:25:02', "email" = 'ricardo.gmail.com' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/participantes/2
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/participantes/2]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-18 14:25:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/participantes/2]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-18 14:25:05) [GET]
+  [4;35;1mParticipante Load (0.8ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#new (for 127.0.0.1 at 2009-12-18 14:25:12) [GET]
+Rendering template within layouts/application
+Rendering participantes/new
+Completed in 106ms (View: 102, DB: 0) | 200 OK [http://localhost/participantes/new]
+
+
+Processing ParticipantesController#create (for 127.0.0.1 at 2009-12-18 14:25:21) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "participante"=>{"nome"=>"tiagoooooo", "email"=>"ti.gmail.com"}}
+  [4;36;1mParticipante Create (0.4ms)[0m   [0;1mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-18 16:25:21', 'tiagoooooo', '2009-12-18 16:25:21', NULL, 'ti.gmail.com')[0m
+Redirected to http://localhost:3000/participantes/5
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/participantes]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-18 14:25:21) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mParticipante Load (0.2ms)[0m   [0mSELECT * FROM "participantes" WHERE ("participantes"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/participantes/5]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-18 14:25:25) [GET]
+  [4;36;1mParticipante Load (0.9ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://localhost/participantes]
