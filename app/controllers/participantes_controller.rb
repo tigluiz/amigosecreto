@@ -1,3 +1,3 @@
 class ParticipantesController < InheritedResources::Base
-   
-  end
+  belongs_to :sorteio   
+end

@@ -1,6 +1,6 @@
 <h1>Edição de participantes</h1>
 
-<% form_for(@participante) do |f| %>
+<% form_for([@sorteio,@participante]) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -17,5 +17,5 @@
   </p>
 <% end %>
 
-<%= link_to 'Mostrar', @participante %> |
-<%= link_to 'Voltar', participantes_path %>
+<%= link_to 'Mostrar', sorteio_participante_path(@sorteio, @participante) %> |
+<%= link_to 'Voltar', sorteio_participantes_path %>

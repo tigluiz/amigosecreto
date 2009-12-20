@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :participantes
-
-  map.resources :sorteios
+  map.resources :sorteios do |sorteio|
+    sorteio.resources :participantes
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
 

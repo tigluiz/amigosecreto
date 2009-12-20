@@ -12,13 +12,13 @@
     <td><%=h participante.nome %></td>
     <td><%=h participante.email %></td>
     
-    <td><%= link_to 'Mostrar', participante %></td>
-    <td><%= link_to 'Editar', edit_participante_path(participante) %></td>
-    <td><%= link_to 'Descartar', participante, :confirm => 'Você tem certeza ?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', sorteio_participante_path(@sorteio, participante) %></td>
+    <td><%= link_to 'Editar', edit_sorteio_participante_path(@sorteio, participante) %></td>
+    <td><%= link_to 'Descartar', sorteio_participante_path(@sorteio, participante), :confirm => 'Você tem certeza ?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Novo participante', new_participante_path %>
+<%= link_to 'Novo participante', new_sorteio_participante_path %>

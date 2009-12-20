@@ -1290,3 +1290,970 @@ Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-18 14:25:25) 
 Rendering template within layouts/application
 Rendering participantes/index
 Completed in 24ms (View: 20, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-19 16:07:04) [GET]
+  [4;36;1mParticipante Load (0.9ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+Completed in 372ms (View: 368, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#edit (for 127.0.0.1 at 2009-12-19 16:07:11) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mParticipante Load (0.2ms)[0m   [0mSELECT * FROM "participantes" WHERE ("participantes"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering participantes/edit
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/participantes/5/edit]
+
+
+Processing ParticipantesController#update (for 127.0.0.1 at 2009-12-19 16:07:17) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "id"=>"5", "participante"=>{"nome"=>"tiagoooooouuu", "email"=>"ti.gmail.com"}}
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 5) [0m
+  [4;35;1mParticipante Update (9.1ms)[0m   [0mUPDATE "participantes" SET "updated_at" = '2009-12-19 18:07:17', "nome" = 'tiagoooooouuu' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/participantes/5
+Completed in 25ms (DB: 0) | 302 Found [http://localhost/participantes/5]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-19 16:07:17) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/participantes/5]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-19 16:07:19) [GET]
+  [4;35;1mParticipante Load (0.9ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://localhost/participantes]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:11:41) [GET]
+  [4;36;1mParticipante Load (1.1ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (undefined method `participante_path' for #<ActionView::Base:0x1015ed380>) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', participante %></td>
+16:     <td><%= link_to 'Editar', edit_participante_path(participante) %></td>
+17:     <td><%= link_to 'Descartar', participante, :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (62.1ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-20 19:12:14) [GET]
+
+ActionController::RoutingError (No route matches "/sorteio" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-20 19:12:20) [GET]
+  [4;35;1mSorteio Load (0.5ms)[0m   [0mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/application
+Rendering sorteios/index
+Completed in 69ms (View: 65, DB: 1) | 200 OK [http://localhost/sorteios]
+
+
+Processing SorteiosController#new (for 127.0.0.1 at 2009-12-20 19:12:24) [GET]
+Rendering template within layouts/application
+Rendering sorteios/new
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/sorteios/new]
+
+
+Processing SorteiosController#create (for 127.0.0.1 at 2009-12-20 19:12:27) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0="}
+  [4;36;1mSorteio Create (0.5ms)[0m   [0;1mINSERT INTO "sorteios" ("created_at", "updated_at") VALUES('2009-12-20 21:12:27', '2009-12-20 21:12:27')[0m
+Redirected to http://localhost:3000/sorteios/3
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/sorteios]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing SorteiosController#show (for 127.0.0.1 at 2009-12-20 19:12:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sorteios/show
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/sorteios/3]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-20 19:12:29) [GET]
+  [4;36;1mSorteio Load (0.6ms)[0m   [0;1mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/application
+Rendering sorteios/index
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://localhost/sorteios]
+
+
+Processing SorteiosController#show (for 127.0.0.1 at 2009-12-20 19:12:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sorteios/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/sorteios/1]
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-20 19:12:37) [GET]
+  [4;36;1mSorteio Load (0.6ms)[0m   [0;1mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/application
+Rendering sorteios/index
+Completed in 91ms (View: 88, DB: 1) | 200 OK [http://localhost/sorteios]
+
+
+Processing SorteiosController#show (for 127.0.0.1 at 2009-12-20 19:12:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSorteio Load (0.3ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sorteios/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/sorteios/3]
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-20 19:12:45) [GET]
+  [4;36;1mSorteio Load (0.7ms)[0m   [0;1mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/application
+Rendering sorteios/index
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/sorteios]
+
+
+Processing SorteiosController#show (for 127.0.0.1 at 2009-12-20 19:12:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSorteio Load (0.3ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sorteios/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/sorteios/1]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:12:59) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;36;1mParticipante Load (0.8ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (undefined method `participante_path' for #<ActionView::Base:0x1042a1c28>) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', participante %></td>
+16:     <td><%= link_to 'Editar', edit_participante_path(participante) %></td>
+17:     <td><%= link_to 'Descartar', participante, :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (143.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:17:20) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;35;1mParticipante Load (0.9ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["sorteios", :sorteio_id, "participantes", :id] - are they all satisfied?) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path, :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (62.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:19:00) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;36;1mParticipante Load (0.8ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show", :sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"show"}, diff: {:sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path(@sorteio, participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path, :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (61.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:19:32) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;35;1mParticipante Load (0.8ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show", :sorteio_id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"show"}, diff: {:sorteio_id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path(participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path, :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (61.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:19:38) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;36;1mParticipante Load (0.8ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show", :sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"show"}, diff: {:sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path(@sorteio, participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path, :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (151.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:20:34) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;35;1mParticipante Load (0.9ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participantes_url failed to generate from {:controller=>"participantes", :action=>"index", :sorteio_id=>nil, :format=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"index"}, diff: {:sorteio_id=>nil, :format=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participantes_path(@sorteio, participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path, :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):20:in `sorteio_participantes_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (157.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:24:12) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;36;1mParticipante Load (0.9ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show", :sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"show"}, diff: {:sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path(@sorteio, participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(@sorteio, participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path(@sorteio, participante), :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:25:44) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;35;1mParticipante Load (0.9ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show", :sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"show"}, diff: {:sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path(@sorteio, participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(@sorteio, participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path(@sorteio, participante), :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (69.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:26:03) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;36;1mParticipante Load (0.9ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show", :sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"show"}, diff: {:sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path(@sorteio, participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(@sorteio, participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path(@sorteio, participante), :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (63.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:26:05) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;35;1mParticipante Load (0.8ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show", :sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"show"}, diff: {:sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path(@sorteio, participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(@sorteio, participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path(@sorteio, participante), :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (152.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:26:06) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;36;1mParticipante Load (1.0ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show", :sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"show"}, diff: {:sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path(@sorteio, participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(@sorteio, participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path(@sorteio, participante), :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (152.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:26:07) [GET]
+  Parameters: {"sorteio_id"=>"1"}
+  [4;35;1mParticipante Load (0.9ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+
+ActionView::TemplateError (sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"show", :sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}, expected: {:controller=>"participantes", :action=>"show"}, diff: {:sorteio_id=>nil, :id=>#<Participante id: 1, nome: "Tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: nil, created_at: "2009-12-10 18:50:58", updated_at: "2009-12-17 16:36:09">}) on line #15 of app/views/participantes/index.html.erb:
+12:     <td><%=h participante.nome %></td>
+13:     <td><%=h participante.email %></td>
+14:     
+15:     <td><%= link_to 'Mostrar', sorteio_participante_path(@sorteio, participante) %></td>
+16:     <td><%= link_to 'Editar', edit_sorteio_participante_path(@sorteio, participante) %></td>
+17:     <td><%= link_to 'Descartar', sorteio_participante_path(@sorteio, participante), :confirm => 'Você tem certeza ?', :method => :delete %></td>
+18:   </tr>
+
+    (eval):16:in `sorteio_participante_path'
+    app/views/participantes/index.html.erb:15
+    app/views/participantes/index.html.erb:10:in `each'
+    app/views/participantes/index.html.erb:10
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-20 19:26:53) [GET]
+  [4;36;1mSorteio Load (0.7ms)[0m   [0;1mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/application
+Rendering sorteios/index
+Completed in 118ms (View: 114, DB: 1) | 200 OK [http://localhost/sorteios/]
+
+
+Processing SorteiosController#destroy (for 127.0.0.1 at 2009-12-20 19:26:56) [DELETE]
+  Parameters: {"authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "id"=>"1"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 1) [0m
+  [4;36;1mSorteio Destroy (1.5ms)[0m   [0;1mDELETE FROM "sorteios" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/sorteios
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/sorteios/1]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-20 19:26:56) [GET]
+  [4;35;1mSorteio Load (0.9ms)[0m   [0mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/application
+Rendering sorteios/index
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/sorteios]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing SorteiosController#destroy (for 127.0.0.1 at 2009-12-20 19:26:59) [DELETE]
+  Parameters: {"authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "id"=>"3"}
+  [4;36;1mSorteio Load (0.2ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 3) [0m
+  [4;35;1mSorteio Destroy (0.4ms)[0m   [0mDELETE FROM "sorteios" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/sorteios
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/sorteios/3]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing SorteiosController#index (for 127.0.0.1 at 2009-12-20 19:26:59) [GET]
+  [4;36;1mSorteio Load (0.5ms)[0m   [0;1mSELECT * FROM "sorteios" [0m
+Rendering template within layouts/application
+Rendering sorteios/index
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/sorteios]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+  [4;36;1mParticipante Load (0.8ms)[0m   [0;1mSELECT * FROM "participantes" [0m
+  [4;35;1mParticipante Destroy (0.5ms)[0m   [0mDELETE FROM "participantes" WHERE "id" = 1[0m
+  [4;36;1mParticipante Destroy (0.3ms)[0m   [0;1mDELETE FROM "participantes" WHERE "id" = 2[0m
+  [4;35;1mParticipante Destroy (0.2ms)[0m   [0mDELETE FROM "participantes" WHERE "id" = 3[0m
+  [4;36;1mParticipante Destroy (0.2ms)[0m   [0;1mDELETE FROM "participantes" WHERE "id" = 4[0m
+  [4;35;1mParticipante Destroy (0.2ms)[0m   [0mDELETE FROM "participantes" WHERE "id" = 5[0m
+
+
+Processing SorteiosController#new (for 127.0.0.1 at 2009-12-20 19:27:33) [GET]
+Rendering template within layouts/application
+Rendering sorteios/new
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/sorteios/new]
+
+
+Processing SorteiosController#create (for 127.0.0.1 at 2009-12-20 19:27:35) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0="}
+  [4;35;1mSorteio Create (0.4ms)[0m   [0mINSERT INTO "sorteios" ("created_at", "updated_at") VALUES('2009-12-20 21:27:35', '2009-12-20 21:27:35')[0m
+Redirected to http://localhost:3000/sorteios/4
+Completed in 53ms (DB: 0) | 302 Found [http://localhost/sorteios]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing SorteiosController#show (for 127.0.0.1 at 2009-12-20 19:27:35) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mSorteio Load (0.3ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering sorteios/show
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/sorteios/4]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:27:48) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+  [4;35;1mParticipante Load (0.5ms)[0m   [0mSELECT * FROM "participantes" [0m
+Rendering template within layouts/application
+Rendering participantes/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/sorteios/4/participantes]
+
+
+Processing ParticipantesController#new (for 127.0.0.1 at 2009-12-20 19:27:58) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+Rendering template within layouts/application
+Rendering participantes/new
+
+ActionView::TemplateError (undefined method `participantes_path' for #<ActionView::Base:0x104323c00>) on line #3 of app/views/participantes/new.html.erb:
+1: <h1>Novo participante</h1>
+2: 
+3: <% form_for(@participante) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/participantes/new.html.erb:3
+
+Rendered rescues/_trace (140.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#new (for 127.0.0.1 at 2009-12-20 19:30:47) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+Rendering template within layouts/application
+Rendering participantes/new
+
+ActionView::TemplateError (undefined method `participantes_path' for #<ActionView::Base:0x1043f1f88>) on line #3 of app/views/participantes/new.html.erb:
+1: <h1>Novo participante</h1>
+2: 
+3: <% form_for([@sorteio, @participante]) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/participantes/new.html.erb:3
+
+Rendered rescues/_trace (56.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#new (for 127.0.0.1 at 2009-12-20 19:30:49) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+Rendering template within layouts/application
+Rendering participantes/new
+
+ActionView::TemplateError (undefined method `participantes_path' for #<ActionView::Base:0x1044d69d0>) on line #3 of app/views/participantes/new.html.erb:
+1: <h1>Novo participante</h1>
+2: 
+3: <% form_for([@sorteio, @participante]) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/participantes/new.html.erb:3
+
+Rendered rescues/_trace (56.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#new (for 127.0.0.1 at 2009-12-20 19:31:52) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+  [4;36;1mSorteio Load (0.2ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering participantes/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/sorteios/4/participantes/new]
+
+
+Processing ParticipantesController#create (for 127.0.0.1 at 2009-12-20 19:31:57) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "sorteio_id"=>"4", "participante"=>{"nome"=>"tiago", "email"=>""}}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Create (0.5ms)[0m   [0;1mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-20 21:31:57', 'tiago', '2009-12-20 21:31:57', 4, '')[0m
+Redirected to http://localhost:3000/sorteios/4/participantes/6
+Completed in 101ms (DB: 0) | 302 Found [http://localhost/sorteios/4/participantes]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-20 19:31:57) [GET]
+  Parameters: {"id"=>"6", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 6 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+
+ActionView::TemplateError (undefined method `edit_participante_path' for #<ActionView::Base:0x104449030>) on line #14 of app/views/participantes/show.html.erb:
+11: 
+12: 
+13: 
+14: <%= link_to 'Editar', edit_participante_path(@participante) %> |
+15: <%= link_to 'Voltar', participantes_path %>
+
+    app/views/participantes/show.html.erb:14
+
+Rendered rescues/_trace (54.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#create (for 127.0.0.1 at 2009-12-20 19:32:08) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "sorteio_id"=>"4", "participante"=>{"nome"=>"tiago", "email"=>"tig.luiz.almeida@gmail.com"}}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Create (0.5ms)[0m   [0;1mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-20 21:32:09', 'tiago', '2009-12-20 21:32:09', 4, 'tig.luiz.almeida@gmail.com')[0m
+Redirected to http://localhost:3000/sorteios/4/participantes/7
+Completed in 100ms (DB: 0) | 302 Found [http://localhost/sorteios/4/participantes]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-20 19:32:09) [GET]
+  Parameters: {"id"=>"7", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 7 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+
+ActionView::TemplateError (undefined method `edit_participante_path' for #<ActionView::Base:0x104449580>) on line #14 of app/views/participantes/show.html.erb:
+11: 
+12: 
+13: 
+14: <%= link_to 'Editar', edit_participante_path(@participante) %> |
+15: <%= link_to 'Voltar', participantes_path %>
+
+    app/views/participantes/show.html.erb:14
+
+Rendered rescues/_trace (53.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-20 19:33:15) [GET]
+  Parameters: {"id"=>"7", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 7 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+
+ActionView::TemplateError (edit_sorteio_participante_url failed to generate from {:controller=>"participantes", :action=>"edit", :sorteio_id=>#<Participante id: 7, nome: "tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: 4, created_at: "2009-12-20 21:32:09", updated_at: "2009-12-20 21:32:09">}, expected: {:controller=>"participantes", :action=>"edit"}, diff: {:sorteio_id=>#<Participante id: 7, nome: "tiago", email: "tig.luiz.almeida@gmail.com", sorteio_id: 4, created_at: "2009-12-20 21:32:09", updated_at: "2009-12-20 21:32:09">}) on line #14 of app/views/participantes/show.html.erb:
+11: 
+12: 
+13: 
+14: <%= link_to 'Editar', edit_sorteio_participante_path(@participante) %> |
+15: <%= link_to 'Voltar', sorteio_participantes_path %>
+
+    (eval):16:in `edit_sorteio_participante_path'
+    app/views/participantes/show.html.erb:14
+
+Rendered rescues/_trace (59.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-20 19:33:50) [GET]
+  Parameters: {"id"=>"7", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 7 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/sorteios/4/participantes/7]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:33:53) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.3ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.4ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes".sorteio_id = 4) [0m
+Rendering template within layouts/application
+Rendering participantes/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/sorteios/4/participantes]
+
+
+Processing ParticipantesController#destroy (for 127.0.0.1 at 2009-12-20 19:34:00) [DELETE]
+  Parameters: {"authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "id"=>"6", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 6 AND ("participantes".sorteio_id = 4)) [0m
+  [4;35;1mParticipante Destroy (0.3ms)[0m   [0mDELETE FROM "participantes" WHERE "id" = 6[0m
+Redirected to http://localhost:3000/sorteios/4/participantes
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/sorteios/4/participantes/6]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:34:00) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+  [4;36;1mSorteio Load (0.2ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;35;1mParticipante Load (0.3ms)[0m   [0mSELECT * FROM "participantes" WHERE ("participantes".sorteio_id = 4) [0m
+Rendering template within layouts/application
+Rendering participantes/index
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/sorteios/4/participantes]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#new (for 127.0.0.1 at 2009-12-20 19:34:04) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+  [4;36;1mSorteio Load (0.2ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering participantes/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/sorteios/4/participantes/new]
+
+
+Processing ParticipantesController#create (for 127.0.0.1 at 2009-12-20 19:34:11) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "sorteio_id"=>"4", "participante"=>{"nome"=>"ricardo", "email"=>"ricardo.gmail.com"}}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Create (0.4ms)[0m   [0;1mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-20 21:34:11', 'ricardo', '2009-12-20 21:34:11', 4, 'ricardo.gmail.com')[0m
+Redirected to http://localhost:3000/sorteios/4/participantes/8
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/sorteios/4/participantes]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-20 19:34:11) [GET]
+  Parameters: {"id"=>"8", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/sorteios/4/participantes/8]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#edit (for 127.0.0.1 at 2009-12-20 19:34:15) [GET]
+  Parameters: {"id"=>"8", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.3ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/edit
+
+ActionView::TemplateError (undefined method `participante_path' for #<ActionView::Base:0x104494850>) on line #3 of app/views/participantes/edit.html.erb:
+1: <h1>Edição de participantes</h1>
+2: 
+3: <% form_for(@participante) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/participantes/edit.html.erb:3
+
+Rendered rescues/_trace (56.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#edit (for 127.0.0.1 at 2009-12-20 19:34:53) [GET]
+  Parameters: {"id"=>"8", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/edit
+
+ActionView::TemplateError (undefined method `participante_path' for #<ActionView::Base:0x10418aa10>) on line #3 of app/views/participantes/edit.html.erb:
+1: <h1>Edição de participantes</h1>
+2: 
+3: <% form_for(@participante) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/participantes/edit.html.erb:3
+
+Rendered rescues/_trace (57.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#edit (for 127.0.0.1 at 2009-12-20 19:34:54) [GET]
+  Parameters: {"id"=>"8", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/edit
+
+ActionView::TemplateError (undefined method `participante_path' for #<ActionView::Base:0x104219580>) on line #3 of app/views/participantes/edit.html.erb:
+1: <h1>Edição de participantes</h1>
+2: 
+3: <% form_for(@participante) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/participantes/edit.html.erb:3
+
+Rendered rescues/_trace (143.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#edit (for 127.0.0.1 at 2009-12-20 19:35:31) [GET]
+  Parameters: {"id"=>"8", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/edit
+
+ActionView::TemplateError (undefined method `stringify_keys' for #<Participante:0x1042fd898>) on line #20 of app/views/participantes/edit.html.erb:
+17:   </p>
+18: <% end %>
+19: 
+20: <%= link_to 'Mostrar', @sorteio, @participante %> |
+21: <%= link_to 'Voltar', sorteio_participantes_path %>
+
+    app/views/participantes/edit.html.erb:20
+
+Rendered rescues/_trace (148.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#edit (for 127.0.0.1 at 2009-12-20 19:36:27) [GET]
+  Parameters: {"id"=>"8", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.6ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/edit
+
+ActionView::TemplateError (undefined method `sorteio_participante' for #<ActionView::Base:0x1043fd068>) on line #20 of app/views/participantes/edit.html.erb:
+17:   </p>
+18: <% end %>
+19: 
+20: <%= link_to 'Mostrar', sorteio_participante(@sorteio, @participante) %> |
+21: <%= link_to 'Voltar', sorteio_participantes_path %>
+
+    app/views/participantes/edit.html.erb:20
+
+Rendered rescues/_trace (53.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#edit (for 127.0.0.1 at 2009-12-20 19:36:51) [GET]
+  Parameters: {"id"=>"8", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.3ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/edit
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/sorteios/4/participantes/8/edit]
+
+
+Processing ParticipantesController#update (for 127.0.0.1 at 2009-12-20 19:36:54) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "id"=>"8", "sorteio_id"=>"4", "participante"=>{"nome"=>"ricardo", "email"=>"ricardo.gmail.com"}}
+  [4;35;1mSorteio Load (0.3ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+Redirected to http://localhost:3000/sorteios/4/participantes/8
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/sorteios/4/participantes/8]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-20 19:36:54) [GET]
+  Parameters: {"id"=>"8", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/sorteios/4/participantes/8]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:36:56) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.2ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.4ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes".sorteio_id = 4) [0m
+Rendering template within layouts/application
+Rendering participantes/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/sorteios/4/participantes]
+
+
+Processing ParticipantesController#destroy (for 127.0.0.1 at 2009-12-20 19:37:04) [DELETE]
+  Parameters: {"authenticity_token"=>"BXaaspc2/nSqwfLN3lk+H9IVGeW0ru0RBNCJGB8ERq0=", "id"=>"8", "sorteio_id"=>"4"}
+  [4;35;1mSorteio Load (0.4ms)[0m   [0mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;36;1mParticipante Load (0.3ms)[0m   [0;1mSELECT * FROM "participantes" WHERE ("participantes"."id" = 8 AND ("participantes".sorteio_id = 4)) [0m
+  [4;35;1mParticipante Destroy (0.4ms)[0m   [0mDELETE FROM "participantes" WHERE "id" = 8[0m
+Redirected to http://localhost:3000/sorteios/4/participantes
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/sorteios/4/participantes/8]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:37:04) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+  [4;36;1mSorteio Load (0.2ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;35;1mParticipante Load (0.3ms)[0m   [0mSELECT * FROM "participantes" WHERE ("participantes".sorteio_id = 4) [0m
+Rendering template within layouts/application
+Rendering participantes/index
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from content_tag_string at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/tag_helper.rb:128)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/sorteios/4/participantes]
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+DEPRECATION WARNING: Accessing :notice in flash with InheritedResources is deprecated, please use :success instead. (called from dump at /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/message_verifier.rb:38)
+
+
+Processing ParticipantesController#show (for 127.0.0.1 at 2009-12-20 19:37:08) [GET]
+  Parameters: {"id"=>"7", "sorteio_id"=>"4"}
+  [4;36;1mSorteio Load (0.3ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;35;1mParticipante Load (0.3ms)[0m   [0mSELECT * FROM "participantes" WHERE ("participantes"."id" = 7 AND ("participantes".sorteio_id = 4)) [0m
+Rendering template within layouts/application
+Rendering participantes/show
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/sorteios/4/participantes/7]
+
+
+Processing ParticipantesController#index (for 127.0.0.1 at 2009-12-20 19:37:10) [GET]
+  Parameters: {"sorteio_id"=>"4"}
+  [4;36;1mSorteio Load (0.3ms)[0m   [0;1mSELECT * FROM "sorteios" WHERE ("sorteios"."id" = 4) [0m
+  [4;35;1mParticipante Load (0.3ms)[0m   [0mSELECT * FROM "participantes" WHERE ("participantes".sorteio_id = 4) [0m
+Rendering template within layouts/application
+Rendering participantes/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/sorteios/4/participantes]
