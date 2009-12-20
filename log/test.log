@@ -427,3 +427,377 @@ Processing ParticipantesController#index (for 0.0.0.0 at 2009-12-15 22:55:46) [G
 Rendering template within layouts/participantes
 Rendering participantes/index
 Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/participantes]
+
+
+Processing SorteiosController#destroy (for 0.0.0.0 at 2009-12-20 19:45:23) [DELETE]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/destroy
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/37]
+
+
+Processing SorteiosController#destroy (for 0.0.0.0 at 2009-12-20 19:45:23) [DELETE]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/destroy
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"sorteio"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/37?sorteio%5Bthese%5D=params]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"sorteio"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 73ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/37?sorteio%5Bthese%5D=params]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#create (for 0.0.0.0 at 2009-12-20 19:45:23) [POST]
+  Parameters: {"sorteio"=>{"these"=>"params"}}
+Rendering template within layouts/application
+Rendering sorteios/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios?sorteio%5Bthese%5D=params]
+
+
+Processing SorteiosController#create (for 0.0.0.0 at 2009-12-20 19:45:23) [POST]
+  Parameters: {"sorteio"=>{}}
+Rendering template within layouts/application
+Rendering sorteios/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios?]
+
+
+Processing SorteiosController#create (for 0.0.0.0 at 2009-12-20 19:45:23) [POST]
+  Parameters: {"sorteio"=>{"these"=>"params"}}
+Rendering template within layouts/application
+Rendering sorteios/create
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios?sorteio%5Bthese%5D=params]
+
+
+Processing SorteiosController#create (for 0.0.0.0 at 2009-12-20 19:45:23) [POST]
+  Parameters: {"sorteio"=>{}}
+Rendering template within layouts/application
+Rendering sorteios/create
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios?]
+
+
+Processing SorteiosController#edit (for 0.0.0.0 at 2009-12-20 19:45:23) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/sorteios/37/edit]
+
+
+Processing SorteiosController#new (for 0.0.0.0 at 2009-12-20 19:45:23) [GET]
+Rendering template within layouts/application
+Rendering sorteios/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/sorteios/new]
+
+
+Processing SorteiosController#show (for 0.0.0.0 at 2009-12-20 19:45:23) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/sorteios/37]
+
+
+Processing SorteiosController#index (for 0.0.0.0 at 2009-12-20 19:45:23) [GET]
+Rendering template within layouts/application
+Rendering sorteios/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/sorteios]
+  [4;36;1mSorteio Create (0.5ms)[0m   [0;1mINSERT INTO "sorteios" ("created_at", "updated_at") VALUES('2009-12-20 21:45:23', '2009-12-20 21:45:23')[0m
+  [4;35;1mParticipante Create (0.4ms)[0m   [0mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-20 21:45:23', 'value for nome', '2009-12-20 21:45:23', 1, 'value for email')[0m
+
+
+Processing ParticipantesController#destroy (for 0.0.0.0 at 2009-12-20 19:45:23) [DELETE]
+  Parameters: {"id"=>"37"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ParticipantesController#destroy (for 0.0.0.0 at 2009-12-20 19:45:23) [DELETE]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"37", "participante"=>{"these"=>"params"}}
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"37", "participante"=>{"these"=>"params"}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:45:23) [PUT]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#create (for 0.0.0.0 at 2009-12-20 19:45:23) [POST]
+  Parameters: {"participante"=>{"these"=>"params"}}
+
+
+Processing ParticipantesController#create (for 0.0.0.0 at 2009-12-20 19:45:23) [POST]
+  Parameters: {"participante"=>{}}
+
+
+Processing ParticipantesController#create (for 0.0.0.0 at 2009-12-20 19:45:23) [POST]
+  Parameters: {"participante"=>{"these"=>"params"}}
+
+
+Processing ParticipantesController#create (for 0.0.0.0 at 2009-12-20 19:45:23) [POST]
+  Parameters: {"participante"=>{}}
+
+
+Processing ParticipantesController#edit (for 0.0.0.0 at 2009-12-20 19:45:23) [GET]
+  Parameters: {"id"=>"37"}
+
+
+Processing ParticipantesController#new (for 0.0.0.0 at 2009-12-20 19:45:23) [GET]
+
+
+Processing ParticipantesController#show (for 0.0.0.0 at 2009-12-20 19:45:23) [GET]
+  Parameters: {"id"=>"37"}
+
+
+Processing ParticipantesController#index (for 0.0.0.0 at 2009-12-20 19:45:23) [GET]
+  [4;36;1mSorteio Create (0.5ms)[0m   [0;1mINSERT INTO "sorteios" ("created_at", "updated_at") VALUES('2009-12-20 21:46:46', '2009-12-20 21:46:46')[0m
+
+
+Processing SorteiosController#destroy (for 0.0.0.0 at 2009-12-20 19:46:46) [DELETE]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/destroy
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/37]
+
+
+Processing SorteiosController#destroy (for 0.0.0.0 at 2009-12-20 19:46:46) [DELETE]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/destroy
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"sorteio"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/37?sorteio%5Bthese%5D=params]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"sorteio"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/37?sorteio%5Bthese%5D=params]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 78ms (View: 76, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/application
+Rendering sorteios/update
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios/1]
+
+
+Processing SorteiosController#create (for 0.0.0.0 at 2009-12-20 19:46:46) [POST]
+  Parameters: {"sorteio"=>{"these"=>"params"}}
+Rendering template within layouts/application
+Rendering sorteios/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios?sorteio%5Bthese%5D=params]
+
+
+Processing SorteiosController#create (for 0.0.0.0 at 2009-12-20 19:46:46) [POST]
+  Parameters: {"sorteio"=>{}}
+Rendering template within layouts/application
+Rendering sorteios/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios?]
+
+
+Processing SorteiosController#create (for 0.0.0.0 at 2009-12-20 19:46:46) [POST]
+  Parameters: {"sorteio"=>{"these"=>"params"}}
+Rendering template within layouts/application
+Rendering sorteios/create
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios?sorteio%5Bthese%5D=params]
+
+
+Processing SorteiosController#create (for 0.0.0.0 at 2009-12-20 19:46:46) [POST]
+  Parameters: {"sorteio"=>{}}
+Rendering template within layouts/application
+Rendering sorteios/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/sorteios?]
+
+
+Processing SorteiosController#edit (for 0.0.0.0 at 2009-12-20 19:46:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/sorteios/37/edit]
+
+
+Processing SorteiosController#new (for 0.0.0.0 at 2009-12-20 19:46:46) [GET]
+Rendering template within layouts/application
+Rendering sorteios/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/sorteios/new]
+
+
+Processing SorteiosController#show (for 0.0.0.0 at 2009-12-20 19:46:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/application
+Rendering sorteios/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/sorteios/37]
+
+
+Processing SorteiosController#index (for 0.0.0.0 at 2009-12-20 19:46:46) [GET]
+Rendering template within layouts/application
+Rendering sorteios/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/sorteios]
+  [4;35;1mParticipante Create (0.5ms)[0m   [0mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-20 21:46:46', 'value for nome', '2009-12-20 21:46:46', 1, 'value for email')[0m
+
+
+Processing ParticipantesController#destroy (for 0.0.0.0 at 2009-12-20 19:46:46) [DELETE]
+  Parameters: {"id"=>"37"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ParticipantesController#destroy (for 0.0.0.0 at 2009-12-20 19:46:46) [DELETE]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"37", "participante"=>{"these"=>"params"}}
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"37", "participante"=>{"these"=>"params"}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#update (for 0.0.0.0 at 2009-12-20 19:46:46) [PUT]
+  Parameters: {"id"=>"1"}
+
+
+Processing ParticipantesController#create (for 0.0.0.0 at 2009-12-20 19:46:46) [POST]
+  Parameters: {"participante"=>{"these"=>"params"}}
+
+
+Processing ParticipantesController#create (for 0.0.0.0 at 2009-12-20 19:46:46) [POST]
+  Parameters: {"participante"=>{}}
+
+
+Processing ParticipantesController#create (for 0.0.0.0 at 2009-12-20 19:46:47) [POST]
+  Parameters: {"participante"=>{"these"=>"params"}}
+
+
+Processing ParticipantesController#create (for 0.0.0.0 at 2009-12-20 19:46:47) [POST]
+  Parameters: {"participante"=>{}}
+
+
+Processing ParticipantesController#edit (for 0.0.0.0 at 2009-12-20 19:46:47) [GET]
+  Parameters: {"id"=>"37"}
+
+
+Processing ParticipantesController#new (for 0.0.0.0 at 2009-12-20 19:46:47) [GET]
+
+
+Processing ParticipantesController#show (for 0.0.0.0 at 2009-12-20 19:46:47) [GET]
+  Parameters: {"id"=>"37"}
+
+
+Processing ParticipantesController#index (for 0.0.0.0 at 2009-12-20 19:46:47) [GET]
+  [4;36;1mSorteio Create (0.5ms)[0m   [0;1mINSERT INTO "sorteios" ("created_at", "updated_at") VALUES('2009-12-20 21:48:43', '2009-12-20 21:48:43')[0m
+  [4;35;1mParticipante Create (0.4ms)[0m   [0mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-20 21:48:43', 'value for nome', '2009-12-20 21:48:43', 1, 'value for email')[0m
