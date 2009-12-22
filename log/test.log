@@ -801,3 +801,7 @@ Processing ParticipantesController#show (for 0.0.0.0 at 2009-12-20 19:46:47) [GE
 Processing ParticipantesController#index (for 0.0.0.0 at 2009-12-20 19:46:47) [GET]
   [4;36;1mSorteio Create (0.5ms)[0m   [0;1mINSERT INTO "sorteios" ("created_at", "updated_at") VALUES('2009-12-20 21:48:43', '2009-12-20 21:48:43')[0m
   [4;35;1mParticipante Create (0.4ms)[0m   [0mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-20 21:48:43', 'value for nome', '2009-12-20 21:48:43', 1, 'value for email')[0m
+  [4;36;1mParticipante Create (0.5ms)[0m   [0;1mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-20 21:54:10', 'value for nome', '2009-12-20 21:54:10', 1, 'value for email')[0m
+  [4;35;1mSorteio Create (0.4ms)[0m   [0mINSERT INTO "sorteios" ("created_at", "updated_at") VALUES('2009-12-20 21:54:10', '2009-12-20 21:54:10')[0m
+  [4;36;1mParticipante Create (0.5ms)[0m   [0;1mINSERT INTO "participantes" ("created_at", "nome", "updated_at", "sorteio_id", "email") VALUES('2009-12-20 21:54:55', 'value for nome', '2009-12-20 21:54:55', 1, 'value for email')[0m
+  [4;35;1mSorteio Create (0.4ms)[0m   [0mINSERT INTO "sorteios" ("created_at", "updated_at") VALUES('2009-12-20 21:54:55', '2009-12-20 21:54:55')[0m
