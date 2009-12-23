@@ -2,8 +2,15 @@ require 'spec_helper'
 
 describe Sorteio do
  it "deve sortear um amigo secreto para um participante" do
-   sorteio = Sorteio.new
+  pending
  end
+ 
+ it "não deve sortear duas vezes o mesmo cara" do
+    sorteio = Sorteio.new
+    primeiro_sorteado = sorteio.sortear
+    sorteio.sortear.should_not == primeiro_sorteado
+ end
+ 
  it "nao deve sortear a si proprio" do
    pending
  end
@@ -12,7 +19,5 @@ describe Sorteio do
    pending
  end
   
-  it "should create a new instance given valid attributes" do
-    Sorteio.create!(@valid_attributes)
-  end
+ 
 end
