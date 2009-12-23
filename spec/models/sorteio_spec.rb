@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Sorteio do
  it "deve sortear um amigo secreto para um participante" do
-   pending
+   sorteio = Sorteio.new
  end
  it "nao deve sortear a si proprio" do
    pending
