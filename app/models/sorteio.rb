@@ -1,11 +1,13 @@
 class Sorteio < ActiveRecord::Base
   has_many :participantes
-  def initialize
-  @lista =  ["Tiago", "Ricardo"]
-  end
+  
   def sortear
-   sorteado = @lista.rand
-   @lista.delete(sorteado)
+   lista = participantes.clone
+   sorteado = lista.rand
+   lista.delete(sorteado)
    sorteado
+  end
+  
+  def amigo_secreto
   end
 end
