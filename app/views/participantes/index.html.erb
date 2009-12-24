@@ -4,7 +4,6 @@
   <tr>
     <th>Nome</th>
     <th>Email</th>
-
   </tr>
 
 <% for participante in @participantes %>
@@ -22,3 +21,7 @@
 <br />
 
 <%= link_to 'Novo participante', new_sorteio_participante_path %>
+
+<br />
+<br />
+<%= link_to_remote 'Sortear', :url => amigo_secreto_path %>

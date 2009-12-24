@@ -3,9 +3,15 @@
 <% form_for(@sorteio) do |f| %>
   <%= f.error_messages %>
 
-  <p>
+<p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+
+ <p>
     <%= f.submit "Criar" %>
   </p>
+
 <% end %>
 
 <%= link_to 'Voltar', sorteios_path %>

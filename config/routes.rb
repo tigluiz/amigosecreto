@@ -2,6 +2,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :sorteios do |sorteio|
     sorteio.resources :participantes
   end
+  
+  map.amigo_secreto "/amigosecreto", :controller => "sorteios", :action => "amigo_secreto"
 
   # The priority is based upon order of creation: first created -> highest priority.
 

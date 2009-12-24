@@ -9,7 +9,15 @@
 </p>
 
 
-
-
+<p>
+  <b>Presente:</b>
+  <%=h @participante.presente %>
+</p>
+<% unless @participante.amigo.nil? %>
+  <p>
+    <b>Amigo secreto:</b>
+    <%=h @participante.amigo.nome %>
+  </p>
+<% end %>
 <%= link_to 'Editar', edit_sorteio_participante_path(@sorteio,@participante) %> |
 <%= link_to 'Voltar', sorteio_participantes_path %>

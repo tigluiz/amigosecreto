@@ -2,10 +2,13 @@
 
 <table>
   <tr>
+	<th>Nome</th>
   </tr>
 
 <% for sorteio in @sorteios %>
   <tr>
+	<td><%=h sorteio.nome %></td>
+	
     <td><%= link_to 'Mostrar', sorteio %></td>
     <td><%= link_to 'Editar', edit_sorteio_path(sorteio) %></td>
     <td><%= link_to 'Descartar', sorteio, :confirm => 'Você tem certeza ?', :method => :delete %></td>

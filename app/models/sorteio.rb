@@ -9,5 +9,12 @@ class Sorteio < ActiveRecord::Base
   end
   
   def amigo_secreto
+    participantes.each do |participante|
+      sorteado = sortear
+      while participante.id == sorteado.id do
+        sorteado = sortear 
+      end
+      participante.amigo = sorteado  
+    end
   end
 end
