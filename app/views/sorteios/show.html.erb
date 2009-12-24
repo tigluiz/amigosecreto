@@ -1,3 +1,13 @@
+<p>
+  <b>Nome:</b>
+  <%=h @sorteio.nome %>
+</p>
 
+<br />
+<br />
+<%= link_to_remote 'Sortear', :url => amigo_secreto_path %>
+
+<br />
+<br />
 <%= link_to 'Editar', edit_sorteio_path(@sorteio) %> |
 <%= link_to 'Voltar', sorteios_path %>
