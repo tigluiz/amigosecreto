@@ -39,5 +39,14 @@ describe Sorteio do
         participante.id.should_not == participante.amigo.id 
       end
     end
+    context "xxxx" do
+      before do
+        @sorteio.participantes << Participante.new(:nome => "Tiago")
+        @sorteio.participantes << Participante.new(:nome => "Ricardo")        
+      end
+      it "nao deve ser sorteado por quem sorteou" do
+        @sorteio.participantes[1].should be_nil 
+      end
+    end
   end
 end
