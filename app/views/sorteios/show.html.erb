@@ -5,9 +5,10 @@
 
 <br />
 <br />
-<%= link_to_remote 'Sortear', :url => amigo_secreto_path %>
+<h1><%= link_to_remote 'Sortear', :url => amigo_secreto_path(@sorteio) %></h1>
 
 <br />
 <br />
 <%= link_to 'Editar', edit_sorteio_path(@sorteio) %> |
+<%= link_to 'Participantes', sorteio_participantes_path(@sorteio) %> |
 <%= link_to 'Voltar', sorteios_path %>

@@ -14,7 +14,10 @@ class Sorteio < ActiveRecord::Base
       while participante.id == sorteado.id do
         sorteado = sortear 
       end
-      participante.amigo = sorteado  
+      participante.amigo = sorteado
+      sorteado.presente  = participante.presente_amigo
     end
+    participante.save
+    sorteado.save
   end
 end

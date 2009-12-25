@@ -2,20 +2,13 @@
   <b>Nome:</b>
   <%=h @participante.nome %>
 </p>
-
-<p>
-  <b>Email:</b>
-  <%=h @participante.email %>
-</p>
-
-
-<p>
-  <b>Presente:</b>
-  <%=h @participante.presente %>
-</p>
 <% unless @participante.amigo.nil? %>
   <p>
-    <b>Amigo secreto:</b>
+    <b>Você ganhou o presente:</b>
+    <%=h @participante.presente %>
+  </p>
+  <p>
+    <b>Seu Amigo Secreto:</b>
     <%=h @participante.amigo.nome %>
   </p>
 <% end %>
